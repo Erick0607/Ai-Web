@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface selection:bg-primary/30 selection:text-primary;
+    font-family: 'Manrope', sans-serif;
+    min-height: max(884px, 100dvh);
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+  
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .glow-primary {
+    box-shadow: 0 0 20px rgba(143, 245, 255, 0.4);
+  }
+  
+  .text-glow-primary {
+    text-shadow: 0 0 10px rgba(143, 245, 255, 0.8);
+  }
+
+  .font-space-grotesk {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  .font-manrope {
+    font-family: 'Manrope', sans-serif;
+  }
+}
